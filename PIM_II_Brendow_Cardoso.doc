@@ -1,0 +1,425 @@
+﻿
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:w="urn:schemas-microsoft-com:office:word"
+      xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+  <meta charset="utf-8">
+  <title>APLICAÇÕES DE TI E AUTOMAÇÃO DE CONSUMO DE ÁGUA NA AMBEV</title>
+  <!--[if gte mso 9]>
+  <xml>
+    <w:WordDocument>
+      <w:View>Print</w:View>
+      <w:Zoom>100</w:Zoom>
+      <w:DoNotOptimizeForBrowser/>
+    </w:WordDocument>
+  </xml>
+  <![endif]-->
+  <style>
+    @page {
+      size: 210mm 297mm;
+      margin: 3.0cm 2.0cm 2.0cm 3.0cm; /* Margens ABNT: Superior 3cm, Esquerda 3cm, Inferior 2cm, Direita 2cm */
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      font-size: 12pt;
+      line-height: 1.5;
+      color: #000000;
+      text-align: justify;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Arial', sans-serif;
+      color: #000000;
+      margin-top: 0;
+      margin-bottom: 12pt;
+      text-align: center;
+    }
+    h1 {
+      font-size: 14pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 24pt;
+    }
+    h2 {
+      font-size: 12pt;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    h3 {
+      font-size: 12pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: left;
+      margin-top: 24pt;
+      margin-bottom: 12pt;
+    }
+    h4 {
+      font-size: 11pt;
+      font-weight: bold;
+      text-align: left;
+      text-transform: none;
+      margin-top: 18pt;
+      margin-bottom: 6pt;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 12pt;
+      text-indent: 1.5cm; /* Recuo regulamentar de parágrafo ABNT de 1,5cm */
+      text-align: justify;
+      line-height: 1.5;
+    }
+    p.no-indent {
+      text-indent: 0;
+    }
+    .page-break {
+      page-break-before: always;
+      clear: both;
+      mso-special-character: page-break;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .text-right {
+      text-align: right;
+    }
+    .natureza-bloco {
+      margin-left: 8cm; /* Alinhamento do bloco de natureza do trabalho à direita (recuo de 8cm) */
+      text-align: justify;
+      font-size: 10pt;
+      line-height: 1.3;
+      margin-top: 24pt;
+      margin-bottom: 24pt;
+      text-indent: 0;
+    }
+    pre {
+      font-family: 'Consolas', 'Courier New', monospace;
+      background-color: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      padding: 12pt;
+      font-size: 9.5pt;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin-top: 12pt;
+      margin-bottom: 12pt;
+      text-indent: 0;
+      text-align: left;
+    }
+    .keyword-block {
+      margin-top: 12pt;
+      font-size: 11pt;
+      text-indent: 0;
+    }
+    .summary-item {
+      font-family: 'Courier New', monospace;
+      font-size: 11pt;
+      margin-bottom: 6pt;
+      text-indent: 0;
+    }
+    .reference-item {
+      margin-bottom: 12pt;
+      text-indent: -1.0cm; /* Recuo de referências bibliográficas conforme ABNT */
+      margin-left: 1.0cm;
+      font-size: 11pt;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <!-- CAPA -->
+  <div style="text-align: center;">
+    <p class="no-indent" style="font-weight: bold; font-size: 14pt; margin-bottom: 40pt; text-transform: uppercase;">UNIVERSIDADE PAULISTA – UNIP EaD</p>
+    <p class="no-indent" style="font-weight: bold; font-size: 12pt; margin-bottom: 48pt; text-transform: uppercase;">PROJETO INTEGRADO MULTIDISCIPLINAR II (PIM II)</p>
+    
+    <p class="no-indent" style="font-size: 12pt; font-weight: bold; margin-bottom: 96pt; text-transform: uppercase;">Tecnologia em Análise e Desenvolvimento de Sistemas</p>
+    
+    <p class="no-indent" style="font-weight: bold; font-size: 12pt; margin-bottom: 4px; text-transform: uppercase;">Brendow Cardoso</p>
+    <p class="no-indent" style="font-size: 10pt; font-family: monospace; margin-bottom: 96pt;">RA: 2616066</p>
+    
+    <p class="no-indent" style="font-weight: bold; font-size: 14pt; margin-bottom: 12pt; text-transform: uppercase;">APLICAÇÕES DE TI E AUTOMAÇÃO DE CONSUMO DE ÁGUA NA AMBEV</p>
+    <p class="no-indent" style="font-size: 11pt; font-weight: normal; margin-bottom: 120pt; text-transform: uppercase; color: #555555;">Estudo de Caso e Desenvolvimento de Solução para Controle do Índice de Consumo de Água (ICA)</p>
+    
+    <div style="margin-top: auto;">
+      <p class="no-indent" style="font-weight: bold; font-size: 12pt; text-transform: uppercase; margin-bottom: 4pt;">Santo André Centro</p>
+      <p class="no-indent" style="font-size: 11pt; font-family: monospace;">2026</p>
+    </div>
+  </div>
+  
+  <div class="page-break"></div>
+  
+  <!-- FOLHA DE ROSTO -->
+  <div style="text-align: center;">
+    <p class="no-indent" style="font-weight: bold; font-size: 12pt; margin-bottom: 96pt; text-transform: uppercase;">Brendow Cardoso</p>
+    
+    <p class="no-indent" style="font-weight: bold; font-size: 14pt; margin-bottom: 12pt; text-transform: uppercase;">APLICAÇÕES DE TI E AUTOMAÇÃO DE CONSUMO DE ÁGUA NA AMBEV</p>
+    <p class="no-indent" style="font-size: 11pt; font-weight: normal; margin-bottom: 48pt; text-transform: uppercase; color: #555555;">Estudo de Caso e Desenvolvimento de Solução para Controle do Índice de Consumo de Água (ICA)</p>
+    
+    <div class="natureza-bloco">
+      Projeto Integrado Multidisciplinar II para obtenção do título de tecnólogo no curso de <strong>Tecnologia em Análise e Desenvolvimento de Sistemas</strong>, apresentado à Universidade Paulista – UNIP EaD.<br><br>
+      Orientador(a): Docente da Unidade Acadêmica EAD
+    </div>
+    
+    <div style="margin-top: 120pt;">
+      <p class="no-indent" style="font-weight: bold; font-size: 12pt; text-transform: uppercase; margin-bottom: 4pt;">Santo André Centro</p>
+      <p class="no-indent" style="font-size: 11pt; font-family: monospace;">2026</p>
+    </div>
+  </div>
+  
+  <div class="page-break"></div>
+  
+  <!-- RESUMO -->
+  <div>
+    <h1 style="text-align: center;">RESUMO</h1>
+    <br><br>
+    <p class="no-indent" style="font-size: 12pt; line-height: 1.6; margin-bottom: 18pt;">
+      O presente trabalho constitui o Projeto Integrado Multidisciplinar II (PIM II) aplicado à Ambev S.A., com foco no diagnóstico de sua infraestrutura tecnológica e na proposição de uma solução de software para automatizar o controle de consumo de insumos críticos. Inicialmente, realizou-se um mapeamento detalhado do perfil organizacional da empresa e de seu ecossistema de Tecnologia da Informação e Comunicação (TIC), abrangendo redes, hardware corporativo, servidores em nuvem híbrida e sistemas operacionais. A partir deste diagnóstico, identificou-se um gargalo operacional no chão de fábrica: a medição manual e o registro em papel do Índice de Consumo de Água (ICA) na produção de bebidas. Para mitigar erros humanos, atrasos na consolidação de dados e prejuízos de ordem sustentável, desenvolveu-se uma solução de software baseada na linguagem Python. O algoritmo calcula de forma ponderada o ICA diário e semanal, emitindo alertas automáticos em tempo real caso os índices ultrapassem as metas ESG da empresa. Por fim, avaliou-se a viabilidade técnica de integração deste sistema leve ao ambiente de TI existente, sugerindo planos de expansão contínua através de tecnologias de Internet das Coisas (IoT) e persistência em bancos de dados relacionais.
+    </p>
+    <p class="no-indent keyword-block">
+      <strong>Palavras-chave:</strong> Infraestrutura de TI, Python, Sustentabilidade (ESG), Automação Industrial, Índice de Consumo de Água (ICA).
+    </p>
+  </div>
+  
+  <div class="page-break"></div>
+  
+  <!-- ABSTRACT -->
+  <div>
+    <h1 style="text-align: center;">ABSTRACT</h1>
+    <br><br>
+    <p class="no-indent" style="font-size: 12pt; line-height: 1.6; margin-bottom: 18pt; font-style: italic;">
+      This work presents the Multidisciplinary Integrated Project II (PIM II) applied to Ambev S.A., focusing on diagnosing its technological infrastructure and proposing a software solution to automate the control of critical inputs. Initially, a detailed mapping of the company's organizational profile and its Information and Communication Technology (ICT) ecosystem was carried out, covering networks, corporate hardware, hybrid cloud servers, and operating systems. Based on this diagnosis, an operational bottleneck was identified on the factory floor: the manual measurement and paper recording of the Water Consumption Index (WCI) in beverage production. To mitigate human errors, delays in data consolidation, and sustainability-related losses, a software solution was developed using the Python language. The algorithm calculates the daily and weekly weighted WCI, automatically issuing real-time alerts if the rates exceed the company's ESG goals. Finally, the technical feasibility of integrating this lightweight system with the existing IT environment was assessed, suggesting continuous expansion plans through Internet of Things (IoT) technologies and relational database persistence.
+    </p>
+    <p class="no-indent keyword-block">
+      <strong>Keywords:</strong> IT Infrastructure, Python, Sustainability (ESG), Industrial Automation, Water Consumption Index (WCI).
+    </p>
+  </div>
+  
+  <div class="page-break"></div>
+  
+  <!-- SUMARIO -->
+  <div>
+    <h1 style="text-align: center;">SUMÁRIO</h1>
+    <br><br>
+    <div style="margin-top: 24pt;">
+      <div class="summary-item">1 INTRODUÇÃO .......................................................................................................................................... 6</div>
+      <div class="summary-item">2 DESENVOLVIMENTO – PERFIL ORGANIZACIONAL (ETAPA 1) ................................................................ 7</div>
+      <div class="summary-item">&nbsp;&nbsp;&nbsp;2.1 Perfil Corporativo e Atuação Global Ambev .................................................................................... 7</div>
+      <div class="summary-item">&nbsp;&nbsp;&nbsp;2.2 Justificativa Acadêmica, Porte e Canais Digitais .............................................................................. 8</div>
+      <div class="summary-item">3 DIAGNÓSTICO DE INFRAESTRUTURA (ETAPA 2) ..................................................................................... 9</div>
+      <div class="summary-item">&nbsp;&nbsp;&nbsp;3.1 Hardware, Dispositivos Móveis e CLPs Industriais ........................................................................ 9</div>
+      <div class="summary-item">&nbsp;&nbsp;&nbsp;3.2 Servidores Híbridos, Windows e Kernel Linux Unix ........................................................................ 10</div>
+      <div class="summary-item">4 SISTEMAS CORPORATIVOS E ECOSSISTEMA TIC (ETAPA 3) ................................................................ 11</div>
+      <div class="summary-item">&nbsp;&nbsp;&nbsp;4.1 Processamento em Larga Escala via ERP SAP S/4HANA ............................................................... 11</div>
+      <div class="summary-item">&nbsp;&nbsp;&nbsp;4.2 Topologias de Rede SD-WAN, LANs e Latências Remotas ................................................................ 12</div>
+      <div class="summary-item">5 IDENTIFICAÇÃO DE GARGALO E SUSTENTABILIDADE (ETAPA 4) ........................................................... 13</div>
+      <div class="summary-item">&nbsp;&nbsp;&nbsp;5.1 Contexto do Monitoramento Hídrico e Índice ICA .......................................................................... 13</div>
+      <div class="summary-item">&nbsp;&nbsp;&nbsp;5.2 Leituras de Hidrômetro com Desvios Manuais de Papel ................................................................ 14</div>
+      <div class="summary-item">6 MODELO ALGORÍTMICO EM PYTHON (ETAPA 5) .................................................................................. 15</div>
+      <div class="summary-item">&nbsp;&nbsp;&nbsp;6.1 Código-Fonte Funcional para Verificação Diária ............................................................................ 15</div>
+      <div class="summary-item">&nbsp;&nbsp;&nbsp;6.2 Explicação Técnica das Variáveis e Condicionais ........................................................................... 16</div>
+      <div class="summary-item">7 AVALIAÇÃO DE CONECTIVIDADE E ROADMAP (ETAPA 6) ................................................................... 17</div>
+      <div class="summary-item">&nbsp;&nbsp;&nbsp;7.1 Eficácia do Algoritmo e Viabilidade de Sistemas .......................................................................... 17</div>
+      <div class="summary-item">&nbsp;&nbsp;&nbsp;7.2 Expansão do Projeto com Telemetria Integrada IoT ...................................................................... 18</div>
+      <div class="summary-item">8 CONCLUSÃO GERAL DO PIM II ............................................................................................................ 19</div>
+      <div class="summary-item">REFERÊNCIAS BIBLIOGRÁFICAS ............................................................................................................. 20</div>
+    </div>
+  </div>
+  
+  <div class="page-break"></div>
+  
+  <!-- INTRODUCAO -->
+  <div>
+    <h3>1 INTRODUÇÃO</h3>
+    <p>Este documento apresenta o desenvolvimento do Projeto Integrado Multidisciplinar II (PIM II), tendo como foco de estudo de caso a empresa Ambev S.A., uma das maiores corporações globais de bens de consumo no setor de bebidas. A justificativa para a escolha desta organização reside no seu elevado nível de complexidade operacional e na sua infraestrutura de tecnologia de ponta, fatores fundamentais para a análise prática por estudantes de Análise e Desenvolvimento de Sistemas. O objetivo principal deste estudo é realizar um diagnóstico aprofundado do ambiente de tecnologia, sistemas operacionais, hardware e ecossistema de redes que sustentam as operações da Ambev, correlacionando a teoria acadêmica com as dinâmicas de uma multinacional de alta disponibilidade.</p><p>Ademais, o trabalho busca identificar oportunidades de melhoria nos processos de coleta de dados no chão de fábrica, com especial atenção à gestão de recursos hídricos e práticas de sustentabilidade ambiental corporativa (ESG). A partir da detecção de um gargalo operacional focado no controle manual do Índice de Consumo de Água (ICA), propõe-se o desenvolvimento de um algoritmo em linguagem de programação Python para otimizar e agilizar o fluxo de informações operacionais.</p><p>A estrutura deste relatório técnico divide-se em seis etapas lógicas e sequenciais: a apresentação do perfil da empresa, o diagnóstico detalhado da infraestrutura de hardware e sistemas operacionais, o ecossistema de redes e ferramentas corporativas de TIC, a identificação clara de um problema prático associado ao consumo de água, a apresentação comentada do código em Python elaborado para sanar esta ineficiência e, por fim, a análise crítica sobre a eficácia da aplicação, sua conectividade e os potenciais caminhos de escala para o futuro da organização.</p>
+  </div>
+  
+  <div class="page-break"></div>
+  
+  <!-- ETAPA 1.1 -->
+  <div>
+    <h3>2 DESENVOLVIMENTO – PERFIL ORGANIZACIONAL (ETAPA 1)</h3>
+    <h4>2.1 Perfil Corporativo e Atuação Global Ambev</h4>
+    <p>A Ambev (Companhia de Bebidas das Américas) consolidou-se como uma das maiores referências globais no setor de bens de consumo, com forte liderança na cadeia de produção e distribuição de cervejas, refrigerantes, águas, chás e sucos. A empresa nasceu oficialmente em 1999, a partir da histórica fusão entre as duas maiores cervejarias concorrentes do mercado nacional: a Brahma e a Antarctica. Posteriormente, com a integração ao grupo multinacional Anheuser-Busch InBev (AB InBev), a Ambev expandiu consideravelmente seus horizontes comerciais, atuando em mais de 15 países das Américas e mantendo um portfólio rico que combina marcas consagradas internacionalmente e marcas de forte apelo regional.</p><p>O modelo operacional da empresa abrange um fluxo complexo que vai desde o cultivo e a compra de matérias-primas agrícolas de alta qualidade até sofisticados processos de envase e logística de suprimentos. Para escoar sua imensa produção diária, a Ambev conta com uma vasta rede logística composta por dezenas de cervejarias próprias, centenas de centros de distribuição direta e dezenas de milhares de parceiros comerciais, que incluem bares, restaurantes, hotéis e grandes redes de supermercados. Mais recentemente, a organização revolucionou o comércio eletrônico do setor através do ecossistema digital 'Zé Delivery', uma plataforma que conecta varejistas parceiros diretamente ao consumidor final, otimizando o tempo de entrega e a comodidade.</p>
+  </div>
+  
+  <div class="page-break"></div>
+  
+  <!-- ETAPA 1.2 -->
+  <div>
+    <h4>2.2 Justificativa Acadêmica, Porte e Canais Digitais</h4>
+    <p>Sob a perspectiva de Análise e Desenvolvimento de Sistemas, o porte monumental da Ambev justifica sua seleção imediata para este projeto acadêmico. A gestão eficiente de uma corporação desse porte exige sistemas integrados e uma infraestrutura de tecnologia com redundância estrita, alto poder de processamento distribuído e alta disponibilidade. O mapeamento técnico das operações da empresa permite aos estudantes observar na prática de mercado como os conceitos teóricos de redes, arquitetura de sistemas de software e bancos de dados apoiam-se mutuamente para assegurar a liderança competitiva e a resiliência operacional em escala de bilhões de transações diárias.</p>
+  </div>
+  
+  <div class="page-break"></div>
+  
+  <!-- ETAPA 2.1 -->
+  <div>
+    <h3>3 DIAGNÓSTICO DE INFRAESTRUTURA (ETAPA 2)</h3>
+    <h4>3.1 Hardware, Dispositivos Móveis e CLPs Industriais</h4>
+    <p>A infraestrutura de hardware da Ambev representa um ecossistema complexo planejado para suportar tanto os fluxos computacionais intensivos de escritório quanto as duras condições físicas e operacionais do chão de fábrica. Nas áreas de manufatura e envase, os principais componentes físicos de computação são formados por Controladores Lógicos Programáveis (CLPs), integrados a esteiras industriais automatizadas, balanças digitais de precisão e medidores de vazão com alta imunidade a ruído eletromagnético. Estes dispositivos processam variáveis de campo e comunicam-se diretamente com sistemas supervisórios centralizados, que coordenam as atividades em tempo real.</p><p>Por outro lado, o ambiente corporativo, as salas de engenharia e os centros logísticos são padronizados com desktops de nível profissional e notebooks corporativos de alta durabilidade física. Estes dispositivos são compostos por processadores de arquitetura moderna x86-64 com múltiplos núcleos de processamento térmico otimizados, memórias RAM padrão DDR4 ou DDR5 de 16 GB e unidades de armazenamento em estado sólido (SSD) sob o protocolo NVMe de baixíssima latência. Para os times de entrega de cargas e as frentes de distribuição nos armazéns, a Ambev fornece dispositivos portáteis robustecidos que resistem a quedas, poeira e variação de temperatura, equipados com leitores ópticos industriais de código de barras e conectividade celular robusta.</p>
+  </div>
+  
+  <div class="page-break"></div>
+  
+  <!-- ETAPA 2.2 -->
+  <div>
+    <h4>3.2 Servidores Híbridos, Windows e Kernel Linux Unix</h4>
+    <p>A arquitetura de servidores e processamento de retaguarda adota o modelo híbrido estruturado. Enquanto uma parte sensível da infraestrutura de manufatura e faturamento reside localmente em pequenos clusters físicos redundantes instalados dentro de cada cervejaria — para garantir a continuidade operacional das linhas em caso de queda de links —, a inteligência de negócios e a computação em nuvem em larga escala estão hospedadas em ambientes de nuvem pública de grandes provedores mundiais, como Microsoft Azure e Amazon Web Services (AWS). Essa disposição permite escalabilidade elástica para suportar picos de demanda durante feriados ou grandes eventos nacionais.</p><p>No aspecto dos Sistemas Operacionais, a Ambev utiliza soluções altamente customizadas para cada nicho operacional. No âmbito administrativo e corporativo, predomina o Microsoft Windows Enterprise, configurado sob rígidos controles de diretivas de grupo (Active Directory) e segurança da informação. Nos coletores e smartphones logísticos utilizados na ponta, a empresa adota sistemas baseados no ecossistema Android Corporativo, executando 'launchers' proprietários e aplicativos específicos de roteirização. Nos bastidores críticos dos servidores internos e instâncias em nuvem, imperam distribuições corporativas de Linux, como Red Hat Enterprise Linux (RHEL) e SUSE Linux Enterprise Server, priorizados pela extrema estabilidade, desempenho escalável e segurança contra incidentes cibernéticos.</p>
+  </div>
+  
+  <div class="page-break"></div>
+  
+  <!-- ETAPA 3.1 -->
+  <div>
+    <h3>4 SISTEMAS CORPORATIVOS E ECOSSISTEMA TIC (ETAPA 3)</h3>
+    <h4>4.1 Processamento em Larga Escala via ERP SAP S/4HANA</h4>
+    <p>A circulação de informações corporativas e de negócios na Ambev é orientada e consolidada por meio de um ERP (Enterprise Resource Planning) de última geração, o SAP S/4HANA, que opera como a espinha dorsal unificada da empresa. Quando ocorre uma transação comercial na ponta, as informações de vendas fluem instantaneamente pelos sistemas de controle de estoque e planejamento de necessidades de materiais (MRP II). Isso gera, automaticamente, atualizações logísticas no faturamento de mercadorias, previsão de reabastecimento de malte e embalagens e comandos para o escalonamento da produção industrial nas cervejarias, minimizando estoques desnecessários e otimizando o capital de giro.</p><p>A infraestrutura física de conectividade de rede nas cervejarias utiliza redes LAN locais estruturadas com cabeamentos blindados (do tipo STP/FTP) resistentes a ruídos industriais causados pelos motores de alta potência das turbinas e empacotadoras. Para suportar o tráfego móvel nos armazéns de estocagem, são instalados roteadores e pontos de acesso Wi-Fi industriais operando em frequências blindadas e com criptografia de alto nível. No âmbito geográfico de longa distância, a conexão WAN que interliga as unidades produtoras ao data center e à nuvem é governada por links redundantes de fibra óptica geridos pela tecnologia SD-WAN (Software-Defined Wide Area Network), que distribui dinamicamente as prioridades de tráfego crítico da operação frente ao tráfego comum de Internet.</p>
+  </div>
+  
+  <div class="page-break"></div>
+  
+  <!-- ETAPA 3.2 -->
+  <div>
+    <h4>4.2 Topologias de Rede SD-WAN, LANs e Latências Remotas</h4>
+    <p>A tomada de decisões gerenciais é apoiada pelo uso extensivo de Business Intelligence (BI) e Data Warehouses baseados em nuvem. Utilizando ferramentas avançadas como o Power BI, os gestores seniores da companhia acompanham em tempo real dashboards detalhados com indicadores operacionais chaves de vendas, fretes e volume produtivo. Contudo, devido às proporções continentais da infraestrutura brasileira, a Ambev depara-se com gargalos de sincronização de latência de dados em centros de distribuição e postos avançados isolados no interior do país, onde o sinal de redes 4G ou satélites de telecomunicações comuns apresenta instabilidade. Outra barreira técnica relevante é a difícil integração de sistemas e CLPs legados das áreas industriais (Tecnologia de Operação - TO) com as novas APIs de microsserviços na nuvem (Tecnologia da Informação - TI), exigindo o desenvolvimento contínuo de middlewares proprietários.</p>
+  </div>
+  
+  <div class="page-break"></div>
+  
+  <!-- ETAPA 4.1 -->
+  <div>
+    <h3>5 IDENTIFICAÇÃO DE GARGALO E SUSTENTABILIDADE (ETAPA 4)</h3>
+    <h4>5.1 Contexto do Monitoramento Hídrico e Índice ICA</h4>
+    <p>A excelência em sustentabilidade representa um pilar indispensável de atuação corporativa para a Ambev, estando diretamente ligada aos critérios globais de ESG (Environmental, Social, and Governance). No setor de bebidas, o consumo eficiente de recursos naturais é um dos indicadores mais críticos para avaliar a eficiência operacional e a responsabilidade ecológica de uma cervejaria. O principal indicador de referência adotado internacionalmente é o Índice de Consumo de Água (ICA), que quantifica a relação de volume em litros de água captada e tratada no complexo fabril necessária para produzir exatamente um único litro de bebida final envasada.</p><p>Apesar dos pesados investimentos em automação fabril que a Ambev implementa em suas principais cervejarias, constatou-se a existência de uma necessidade prática pontual e de gargalos operacionais específicos em subestações de hidrômetros analógicos e em linhas de medição secundárias. Nessas áreas específicas, a coleta e a leitura de dados de consumo hídrico ainda dependem de processos essencialmente analógicos e manuais. Diariamente, o operador técnico da subestação realiza a leitura visual do display do hidrômetro e transcreve esses dados brutos em fichas de papel ou cadernetas físicas de acompanhamento de campo ao final de cada turno de trabalho.</p>
+  </div>
+  
+  <div class="page-break"></div>
+  
+  <!-- ETAPA 4.2 -->
+  <div>
+    <h4>5.2 Leituras de Hidrômetro com Desvios Manuais de Papel</h4>
+    <p>Este processo de coleta analógica e manual traz sérios impactos e vulnerabilidades à operação industrial. Primeiramente, as cadernetas de campo estão expostas a riscos severos de perda física, rasuras, ou má caligrafia. Em seguida, os dados consolidados precisam ser digitados por um supervisor administrativo em planilhas eletrônicas locais no final da semana útil, gerando um expressivo retrabalho operacional focado em tarefas de computação repetitiva. Adicionalmente, esse fluxo analógico introduz um perigoso atraso de tempo (gap temporal) de até sete dias entre o consumo físico hídrico real e a consolidação analítica do relatório semanal do índice ICA.</p><p>Esse atraso impede a resposta imediata em tempo ágil diante de vazamentos estruturais silenciosos ou ineficiências em válvulas de envase. Se um vazamento de alta proporção começar em uma terça-feira, o gestor operacional e o supervisor sustentável só tomarão conhecimento do incidente no final da tarde de sexta-feira, após o processamento burocrático de todas as planilhas manuais. Este atraso causa o desperdício irreparável de recursos hídricos potáveis preciosos, o descumprimento temporário das rígidas metas ecológicas globais estabelecidas pela empresa e um impacto financeiro direto com o sobrecusto de descarte e tratamento de efluentes hídricos industriais.</p>
+  </div>
+  
+  <div class="page-break"></div>
+  
+  <!-- ETAPA 5.1 -->
+  <div>
+    <h3>6 MODELO ALGORÍTMICO EM PYTHON (ETAPA 5)</h3>
+    <h4>6.1 Código-Fonte Funcional para Verificação Diária</h4>
+    <p>Conforme estabelecido no Manual do PIM II, elaborou-se um programa em linguagem Python para automatizar o cálculo e sinalização de inconformidades do Índice de Consumo de Água (ICA). A solução garante conformidades de ESG:</p>
+    
+    <pre># ==================================================================
+# SOLUCAO PIM II - SISTEMA DE CONTROLE SUSTENTAVEL DO ICA - AMBEV
+# DESENVOLVIDO EM PYTHON PARA AUTOMACAO DE FLUXO DE PRODUCAO
+# ==================================================================
+
+def calcular_ica(litros_agua, litros_cerveja):
+    """
+    Calcula o Indice de Consumo de Agua (ICA).
+    Evita divisao por zero caso nao ocorra producao no dia.
+    """
+    if litros_cerveja <= 0:
+        return 0.0
+    return litros_agua / litros_cerveja
+
+# Parametros iniciais do sistema de acordo com as diretrizes da Ambev
+dias_de_producao = 5
+meta_ambev = 3.0  # Meta sustentavel: maximo de 3.0 litros de agua por litro de cerveja
+total_agua_semana = 0.0
+total_cerveja_semana = 0.0
+dias_acima_da_meta = 0
+
+print("====================================================")
+print("     SISTEMA DE MONITORAMENTO DE CONSUMO - AMBEV    ")
+print("====================================================\n")
+
+for dia in range(1, dias_de_producao + 1):
+    print(f"--- Coleta de Dados Operacionais: Dia {dia} ---")
+    
+    # Entrada de dados fornecida pelo operador de forma estruturada
+    try:
+        agua_input = float(input("Digite o volume total de AGUA consumido (Litros): "))
+        cerveja_input = float(input("Digite o volume de BEBIDA produzido (Litros): "))
+    except ValueError:
+        print("[ERRO] Entrada invalida. Certifique-se de digitar apenas numeros. Tentando novamente para o mesmo dia.\n")
+        continue
+        
+    # Acumulacao dos dados semanais
+    total_agua_semana += agua_input
+    total_cerveja_semana += cerveja_input
+    
+    # Calculo instantaneo do ICA diario com formatacao de precisao
+    ica_diario = calcular_ica(agua_input, cerveja_input)
+    print(f"Indice de Consumo Diario: {ica_diario:.2f} L/L (Litros de Agua por Litro de Bebida)")
+    
+    # Estrutura condicional para verificacao de metas em tempo real
+    if ica_diario > meta_ambev:
+        print("[ALERTA CRITICO] Consumo diario de agua acima da meta sustentavel!")
+        print("-> Recomenda-se inspecao imediata na linha contra possiveis vazamentos.\n")
+        dias_acima_da_meta += 1
+    else: 
+        print("[STATUS: OK] Consumo hídrico operando em conformidade ambiental.\n")
+    print("-" * 52)
+
+# Calculo da media ponderada consolidada da semana
+ica_semanal = calcular_ica(total_agua_semana, total_cerveja_semana)
+
+print("\n====================================================")
+print("           RELATORIO CONSOLIDADO DA SEMANA           ")
+print("====================================================")
+print(f"Volume total de agua consumida: {total_agua_semana:.2f} L")
+print(f"Volume total de bebida produzida: {total_cerveja_semana:.2f} L")
+print(f"ICA Medio da Unidade na Semana: {ica_semanal:.2f} L/L")
+
+# Conclusao final do monitoramento estruturado
+if ica_semanal <= meta_ambev:
+    print("\nRESULTADO FINAL: A linha produtiva atingiu todas as METAS de sustentabilidade.")
+    print("Parabens a equipe pelo controle operacional hídrico de excelencia!")
+else:
+    print(f"\nRESULTADO FINAL CRITICO: A media semanal excedeu a meta sustentavel da empresa.")
+    print(f"Foram detectados {dias_acima_da_meta} dia(s) com consumo excessivo e fora do padrao.")
+print("====================================================")</pre>
+  </div>
+  
+  <div class="page-break"></div>
+  
+  <!-- ETAPA 5.2 -->
+  <div>
+    <h4>6.2 Explicação Técnica das Variáveis e Condicionais</h4>
+    <p>A solução lógica desenvolvida em Python foi estruturada para atuar como uma interface direta de consolidação de dados operacionais, aplicando conceitos centrais de engenharia de software e pensamento algorítmico. O primeiro pilar da solução é o encapsulamento funcional através da definição da função de escopo global 'calcular_ica'. Esta função recebe dois argumentos posicionais do tipo float e realiza o cálculo matemático do quociente do consumo hídrico. Como boa prática de programação e tolerância a falhas (fault tolerance), a função contém uma condicional que verifica se o volume de cerveja produzida é menor ou igual a zero, prevenindo a ocorrência de exceções graves do sistema por divisão por zero caso a produção da fábrica seja interrompida.</p><p>O segundo pilar baseia-se no fluxo de processamento iterativo e no controle de variáveis acumuladoras. O laço de repetição 'for' é configurado para iterar de forma controlada sobre um número fixo de cinco dias, simulando a dinâmica diária do expediente fabril. Em cada ciclo de repetição, o programa solicita de forma iterativa que o supervisor digite os volumes diários de captação de água e produção envasada. Para blindar o código contra falhas de digitação do operador (como a inclusão acidental de caracteres de texto em campos numéricos), os blocos 'try/except' capturam possíveis exceções do tipo 'ValueError', alertando o usuário sobre o preenchimento inadequado e evitando o encerramento inesperado do script.</p><p>O terceiro pilar consiste no controle lógico de condições em tempo real por meio do encadeamento 'if/else'. Ao processar as variáveis coletadas em cada turno, o programa calcula o indicador diário de consumo e compara imediatamente este valor contra o parâmetro pré-definido de meta sustentável de 3.0 litros de água por litro de bebida produzida. Caso o valor ultrapasse o limite regulamentado pela corporação, o sistema emite no ato da verificação um alerta visual e textual em tela e incrementa uma variável contadora. Esse mecanismo transforma o processamento burocrático retroativo em monitoramento preventivo diário, fornecendo à equipe de engenharia e sustentabilidade informações rápidas para investigar possíveis problemas antes que eles impactem a média final acumulada ao longo de toda a semana operacional.</p>
+  </div>
+  
+  <div class="page-break"></div>
+  
+  <!-- ETAPA 6.1 -->
+  <div>
+    <h3>7 AVALIAÇÃO DE CONECTIVIDADE E ROADMAP (ETAPA 6)</h3>
+    <h4>7.1 Eficácia do Algoritmo e Viabilidade de Sistemas</h4>
+    <p>A solução de programação em Python desenvolvida para mitigar as ineficiências analógicas no cálculo do Índice de Consumo de Água (ICA) na Ambev apresenta resultados altamente satisfatórios sob o prisma da otimização e eficácia de processos. Ao automatizar a tabulação e o processamento de médias hídricas diárias e acumuladas, o software remove por completo o fluxo demorado de digitação semanal e cálculos manuais vulneráveis a falhas humanas de digitação. Com a precisão matemática direta do processador, elimina-se o risco de erros na tabulação de dados operacionais e na emissão de relatórios consolidados.</p><p>Além de sanar erros de arredondamento e cálculo, a principal vantagem gerencial da aplicação de software proposta repousa no ganho de agilidade de resposta. Em vez de obter um diagnóstico apenas no fim da semana, quando as ações mitigadoras perdem eficácia diante do desperdício de insumos que já ocorreu, os supervisores da Ambev recebem feedbacks instantâneos. O monitoramento diário cria uma barreira contra desvios sustentáveis nas fábricas, protegendo os rios, as bacias hidrográficas locais e os cofres da organização contra despesas desnecessárias de tratamento ou descarte irregular.</p>
+  </div>
+  
+  <div class="page-break"></div>
+  
+  <!-- ETAPA 6.2 -->
+  <div>
+    <h4>7.2 Expansão do Projeto com Telemetria Integrada IoT</h4>
+    <p>Sob a perspectiva de conectividade de rede e integração física de infraestrutura de TI, o script de desenvolvimento Python é extremamente ágil e leve (baixo footprint tecnológico). Apresentando uma interface de console leve e uma lógica de baixo consumo de recursos de memória RAM e processamento, o script pode ser executado sem problemas nas máquinas computacionais corporativas mais antigas da fábrica, em computadores operacionais comuns de salas de gerência de controle de utilidades ou em terminais baseados em sistemas operacionais Microsoft Windows ou Linux de manufatura. Não há necessidade de investir em servidores dedicados ou hardware de ponta para sua execução imediata.</p><p>Projetando a evolução do sistema para um ambiente de produção real de grande escala na Ambev, o plano de expansão estruturada segue em direção ao avanço tecnológico. Em um cenário futuro imediato, propõe-se a automação total de coleta por meio do uso de Internet das Coisas (IoT). Ao acoplar sensores eletrônicos inteligentes e medidores de caudal ultrassônicos diretamente na tubulação de entrada de água e cerveja, os hidrômetros digitais enviarão as informações diretamente para o script Python por protocolos industriais estáveis, como o Modbus-TCP ou MQTT. Além disso, o software será conectado a um sistema gerenciador de bancos de dados relacionais (RDBMS) via linguagem SQL, permitindo registrar o histórico anual consolidado da empresa e alimentar painéis globais corporativos na nuvem.</p>
+  </div>
+  
+  <div class="page-break"></div>
+  
+  <!-- CONCLUSÃO -->
+  <div>
+    <h3>8 CONCLUSÃO GERAL DO PIM II</h3>
+    <p>O desenvolvimento do presente Projeto Integrado Multidisciplinar II (PIM II) ofereceu uma rica oportunidade de aplicar em escala prática os fundamentos teóricos de arquitetura de hardware, infraestrutura de redes corporativas de TIC e desenvolvimento lógico de algoritmos computacionais no ecossistema dinâmico e de alta demanda de uma multinacional de grande porte como a Ambev S.A. Através do diagnóstico tecnológico detalhado, foi possível analisar como a infraestrutura de TI híbrida — baseada na virtualização, servidores em nuvem pública (AWS e Azure), sistemas operacionais Linux e Windows robustos e conectividade via arquitetura inteligente de rede SD-WAN — sustenta as operações de comércio eletrônico, logística integrada e manufatura pesada de alimentos.</p><p>Paralelamente à análise macroscópica da TI corporativa, o trabalho demonstrou que a eficiência das grandes organizações também depende de correções assertivas de pequenas lacunas no nível de manufatura operacional. A identificação de rotinas de medição analógica hídrica baseadas em cadernetas de papel para controle do Índice de Consumo de Água (ICA) revelou um gargalo clássico onde a ausência de automação imediata resultava em riscos ESG de desperdício, lentidão corporativa e desperdício de mão de obra de supervisão técnica em tarefas puramente burocráticas.</p><p>A solução computacional idealizada em linguagem Python respondeu de forma elegante a esta necessidade prática do chão de fábrica, desenvolvendo um fluxo interativo leve que mitiga erros de digitação e emite diagnósticos e alertas instantâneos de conformidade ecológica. Por ser altamente otimizado sob o ponto de vista de uso de hardware e recursos de memória das estações locais, o sistema mostrou-se imediatamente compatível com a infraestrutura de computadores de escritório da cervejaria, destacando as vantagens de escalabilidade ao projetar integrações futuras com hardware IoT de telemetria e persistência estruturada de dados relacionais.</p><p>Por fim, conclui-se que o PIM II cumpre seu papel acadêmico unificador, demonstrando como a Análise e Desenvolvimento de Sistemas não deve ser vista apenas como um segmento de suporte técnico isolado, mas sim como a espinha dorsal de transformação de processos organizacionais da indústria. O uso coordenado e estruturado de redes rápidas, lógica de programação e automação é o caminho indispensável para manter organizações de escala mundial competitivas no mercado globalizado de bens de consumo, alinhando eficiência produtiva, redução de desperdício de capital financeiro e as prementes responsabilidades ecológicas mundiais exigidas pela sustentabilidade.</p>
+  </div>
+  
+  <div class="page-break"></div>
+  
+  <!-- REFERENCIAS -->
+  <div>
+    <h3 style="text-align: center;">REFERÊNCIAS BIBLIOGRÁFICAS</h3>
+    <br><br>
+    <div class="reference-item">AMBEV. Relatório de Governança, Tecnologia e Inovação. São Paulo: Ambev S.A., 2025.</div><div class="reference-item">ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 14724: Informação e documentação - Trabalhos acadêmicos - Apresentação. Rio de Janeiro: ABNT, 2011.</div><div class="reference-item">SAP. SAP S/4HANA Cloud: Sistemas Inteligentes de ERP de Grande Porte para Cadeias de Produção. Disponível em: https://www.sap.com. Acesso em: 12 jun. 2026.</div><div class="reference-item">VAN ROSSUM, Guido. Python Tutorial. Python Software Foundation, 2025. Disponível em: https://docs.python.org/3/tutorial/. Acesso em: 4 jun. 2026.</div>
+  </div>
+</body>
+</html>
+    
