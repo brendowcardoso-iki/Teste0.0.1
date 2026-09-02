@@ -1,0 +1,6 @@
+{
+  "name": "Gerador de Calculadoras Python & Gráficos Seaborn",
+  "description": "Crie, personalize, teste e baixe calculadoras em Python (Tkinter GUI, Científica, CLI e POO) com gráficos do histórico de contas gerados pela biblioteca Seaborn.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
